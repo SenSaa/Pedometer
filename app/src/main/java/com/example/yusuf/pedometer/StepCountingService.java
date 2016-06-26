@@ -201,7 +201,7 @@ public class StepCountingService extends Service implements SensorEventListener 
                 // Call the method that broadcasts the data to the Activity..
                 broadcastSensorValue();
                 // Call "handler.postDelayed" again, after a specified delay.
-                handler.postDelayed(this, 1000); // 5 seconds
+                handler.postDelayed(this, 1000);
             }
         }
     };
