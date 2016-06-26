@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yusuf.pedometer">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/sneaker"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- Declare that orientation will be handled manually! - By using "configChanges". -->
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- __________ Define Service. __________ -->
+        <service android:name=".StepCountingService" />
+        <!-- _________________________________________ -->
+
+    </application>
+
+</manifest>

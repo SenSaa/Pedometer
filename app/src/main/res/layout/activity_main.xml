@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yusuf.pedometer.MainActivity"
+    android:backgroundTint="#ef340725"
+    android:backgroundTintMode="add"
+    android:id="@+id/parentLayout"
+    android:alpha="0.90">
+    <!--android:background="@mipmap/h"-->
+
+    <com.example.yusuf.pedometer.Animation
+        android:id="@+id/custom_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:backgroundTintMode="multiply">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:touchscreenBlocksFocus="false"
+            android:transitionGroup="false"
+            android:backgroundTint="#6e0e41"
+            android:backgroundTintMode="multiply"
+            android:alpha="0.90"
+            android:id="@+id/childLayout"
+            >
+            <!--android:background="@mipmap/c"-->
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Service"
+                android:id="@+id/startServiceBtn"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#f4051802"
+                android:textColorHint="#ffffff"
+                android:textColor="#e3d309d7" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Count Steps"
+                android:id="@+id/stepCountTxV"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#f5ac25e6"
+                android:enabled="false" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Detect Steps"
+                android:id="@+id/stepDetectTxV"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ef2d8e" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop Service"
+                android:id="@+id/stopServiceBtn"
+                android:backgroundTint="#f4021715"
+                android:textColor="#f0dd2075" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Animation Custom View -->
+
+</RelativeLayout>
