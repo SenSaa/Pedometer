@@ -181,12 +181,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        //
         layoutsDimen();
 
         // Currently, when "onResume" is called, the animation continues from where it left off, but this commented code, retarts animation from the beginning.
         /*
-        //
         animationCustomView = (Animation)findViewById(R.id.custom_view);
         Handler handler2 = new Handler();
         handler2.postDelayed(new Runnable() {
@@ -199,6 +197,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    // Method for monitoring layout dimensions.
     public void layoutsDimen() {
         parentLayout = (RelativeLayout) findViewById(R.id.parentLayout);
         Log.d("parent layout Height", String.valueOf(parentLayout.getHeight()));
